@@ -2,15 +2,22 @@
 using namespace std;
 
 int main(){
-    int n, a,b,c, count=0;
+    int n, arr[3], count = 0, sum = 0;
     cin >> n;
     
     while(n--){
-        cin >> a >> b >> c;
-        if(a+b+c>=2){
-            count++;
+        for (int i = 0; i < 3;i++){
+            cin >> arr[i];
         }
-        a = b = c = 0;
+        for (int i = 0; i < 3;i++){
+            if(arr[i]==1){
+                count++;
+            }
+        }
+        if(count>=2){
+            sum++;
+        }
+        count = 0;
     }
-    cout << count;
+    cout << sum;
 }
