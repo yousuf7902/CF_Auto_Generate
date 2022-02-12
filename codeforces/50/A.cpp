@@ -3,9 +3,16 @@ using namespace std;
 
 int main()
 {
-     int m, n,slice;
+     int m, n,len=2,wid=1,slice;
      cin >> m >> n;
-     slice = (m * n) / 2;
-     cout << slice;
-     return 0;
+
+     if(m%2==0){
+          slice = (m / len) * (n / wid);
+          cout << slice;
+     }
+     else{
+          m = m - 1;
+          slice = (m / len) * (n / wid)+(n/len);
+          cout << slice;
+     }
 }
