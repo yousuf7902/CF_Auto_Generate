@@ -8,8 +8,14 @@ int main()
      while(n--){
           string statement;
           cin >> statement;
-          if(statement=="++X" || statement=="X++"){
+          if(statement=="++X"){
+               ++x;
+          }
+          else if(statement=="X++"){
                x++;
+          }
+          else if(statement == "--X"){
+               --x;
           }
           else{
                x--;
