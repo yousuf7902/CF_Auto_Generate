@@ -1,4 +1,20 @@
 {
+  "CF148137500": {
+    "contest_id": 467,
+    "language": "GNU C++17",
+    "path": "codeforces\\467\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "George and Accommodation",
+    "problem_url": "https://codeforces.com/contest/467/problem/A",
+    "submission_id": "CF148137500",
+    "submission_url": "https://codeforces.com/contest/467/submission/148137500",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Mar/02/2022 23:19"
+  },
   "CF148144178": {
     "contest_id": 677,
     "language": "GNU C++17",
