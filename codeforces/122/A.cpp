@@ -3,12 +3,23 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int n, fixed = 47;
     cin >> n;
 
-    if (n / 10== 47 || n % 4 == 0 || n %7 == 0 ||n % 47 == 0)
+    if (n / 10== 47)
     {
         cout << "YES" << endl;
+    }
+    else if (n % (fixed / 10) == 0)
+    {
+        cout << "YES" << endl;
+    }
+    else if (n % (fixed % 10) == 0)
+    {
+        cout << "YES" << endl;
+    }
+    else if(n%fixed==0){
+        cout << "YES" << endl; 
     }
     else
     {
