@@ -7,8 +7,8 @@ int main(){
     string a, b;
     cin >> a >> b;
 
-    for (int i = 0; i < a.size();i++){
-        if(a[i]==b[i]){
+    for (int i = 0, j = 0; i < a.size(), j < b.size();i++, j++){
+        if(a[i]==b[j]){
             b[i] = '0';
         }
         else{
