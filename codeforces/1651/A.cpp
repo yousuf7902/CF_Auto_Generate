@@ -10,10 +10,20 @@ int main()
 
     while (t--)
     {
-        int n,num;
+        int n, ath,num;
         cin >> n;
-        num= pow(2, n);
-        cout << num - 1 << endl;
+        ath = pow(2, n);
+        num = ath;
+
+        for (int i = 1; i < n; i++)
+        {
+            ath = ath / 2;
+        }
+
+        for (int i = 1; i < ath;i++){
+            num--;
+        }
+        cout << num<<endl;
     }
 
     return 0;
