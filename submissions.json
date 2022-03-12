@@ -1,4 +1,21 @@
 {
+  "CF149392064": {
+    "contest_id": 1647,
+    "language": "GNU C++17",
+    "path": "codeforces\\1647\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Madoka and Math Dad",
+    "problem_url": "https://codeforces.com/contest/1647/problem/A",
+    "submission_id": "CF149392064",
+    "submission_url": "https://codeforces.com/contest/1647/submission/149392064",
+    "tags": [
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Mar/12/2022 13:31"
+  },
   "CF149536609": {
     "contest_id": 1560,
     "language": "GNU C++17",
