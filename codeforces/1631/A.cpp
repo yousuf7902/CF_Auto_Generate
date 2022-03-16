@@ -23,7 +23,9 @@ int main(){
         }
         for (int i = 0; i < n;i++){
             if(a[i]<b[i]){
-                swap(a[i], b[i]);
+                int temp = a[i];
+                a[i] = b[i];
+                b[i] = temp;
             }
         }
         for (int i = 0; i < n;i++){
