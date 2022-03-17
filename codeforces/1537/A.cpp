@@ -22,12 +22,15 @@ int main()
             sum = sum + arr[i];
         }
 
-        if(sum<n){
-            cout << 1 << endl;
+        if(sum==n){
+            cout << 0 << endl;
         }
-        else{
+        else if(sum>n){
             sum = sum - n;
             cout << sum << endl;
+        }
+        else{
+            cout << 1 << endl;
         }
         
     }
