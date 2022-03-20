@@ -1,4 +1,20 @@
 {
+  "CF150277925": {
+    "contest_id": 670,
+    "language": "GNU C++17",
+    "path": "codeforces\\670\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Game of Robots",
+    "problem_url": "https://codeforces.com/contest/670/problem/B",
+    "submission_id": "CF150277925",
+    "submission_url": "https://codeforces.com/contest/670/submission/150277925",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Mar/20/2022 21:11"
+  },
   "CF150530409": {
     "contest_id": 1657,
     "language": "GNU C++17",
