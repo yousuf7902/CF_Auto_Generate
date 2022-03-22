@@ -18,9 +18,10 @@ int main()
             cout << 0 << endl;
         }
         else{
-            float a = sqrt(x * x + y * y);
+            int a = sqrt(x * x + y * y);
+            int b = x * x + y * y;
 
-            if(int(a)==a){
+            if(int(a*a)==b){
                 cout << 1 << endl;
             }
             else{
