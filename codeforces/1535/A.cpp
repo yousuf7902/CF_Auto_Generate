@@ -12,14 +12,54 @@ int main()
 
     while (t--)
     {
-        int a, b, c, d;
-        cin >> a >> b >> c >> d;
+        int num[4], win1, win2, flag = 0;
 
-        if(min(a,b)>max(c,d)|| min(c,d)>max(a,b)){
-            cout << "NO" << endl;
+        for (int i = 0; i < 4; i++)
+        {
+            cin >> num[i];
+        }
+
+        if (num[0] > num[1])
+        {
+            win1 = num[0];
+        }
+        else
+        {
+            win1 = num[1];
+        }
+
+        if (num[2] > num[3])
+        {
+            win2 = num[2];
+        }
+        else
+        {
+            win2 = num[3];
+        }
+        for (int i = 0; i < 4; i++)
+        {
+            if (num[i] == win1 || num[i] == win2)
+            {
+                continue;
+            }
+            else
+            {
+                if (num[i] < win1)
+                {
+                    flag++;
+                }
+                if (num[i] < win2)
+                {
+                    flag++;
+                }
+            }
+        }
+
+        if(flag==4){
+            cout << "YES" << endl;
         }
         else{
-            cout << "YES" << endl;
+            cout << "NO" << endl;
         }
     }
     return 0;
