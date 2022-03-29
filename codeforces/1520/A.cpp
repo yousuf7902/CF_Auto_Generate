@@ -4,33 +4,51 @@ using namespace std;
 
 int main()
 {
+
     int t;
     cin>>t;
 
-    while(t--){
-        int n,i=0,flag=0;
+    while(t--)
+    {
+        int n,flag=0;
+        cin>>n;
         string s;
+        cin>>s;
 
-        cin>>n>>s;
+        for(int i=0; i<n; i++){
+            int pos=n;
 
-        while(i<n){
+            for(int j=i; j<n; j++){
 
-            if(s[i]!=s[i+1]){
-                for(int j=i+1;j<n;j++){
-                    if(s[i]==s[j]){
-                        flag=1;
-                        break;
-                    }
+                if(s[i]==s[j])
+                {
+                    continue;
+                }
+                else
+                {
+                    pos=j;
+                    break;
                 }
             }
-            i++;
+
+            for(int j=pos ;j<n ;j++){
+                if(s[i]==s[j])
+                {
+                    flag=1;
+                    break;
+                }
+            }
         }
+
         if(flag>0){
             cout<<"NO"<<endl;
         }
         else{
             cout<<"YES"<<endl;
         }
+
+
+
     }
 
     return 0;
