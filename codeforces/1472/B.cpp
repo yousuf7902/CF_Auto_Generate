@@ -25,6 +25,8 @@ int main(){
                 odd++;
             }
         }
+
+        if(n%2==0){
             int sum;
             if(even!=0 && odd!=0){
                 sum = even * 2 + odd;
@@ -42,7 +44,26 @@ int main(){
             else{
                 cout << "NO" << endl;
             }
-        
+        }
+        else{
+            int sum;
+            if(even!=0 && odd!=0){
+                sum = even * 2 + odd;
+            }
+            else if(even==0){
+                sum = odd;
+            }
+            else if(odd==0){
+                sum = even;
+            }
+            
+            if(sum%2==0){
+                cout << "YES" << endl;
+            }
+            else{
+                cout << "NO" << endl;
+            }
+        }
     }
 
     return 0;
