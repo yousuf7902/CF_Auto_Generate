@@ -5,11 +5,21 @@ int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    int arr[3];
-    cin >> arr[0] >> arr[1] >> arr[2];
-    sort(arr, arr + 3);
-    int ans = (arr[1] - arr[0]) + (arr[2] - arr[1]);
-    cout << ans << endl;
+    int x1, x2, x3 , a, b,c;
+    cin >> x1 >> x2 >> x3;
+    a = min(min(x1, x2), x3);
+    b = max(max(x1, x2), x3);
 
+    if((a==x1 && b==x2)||(a==x2 && b==x1)){
+        c = x3;
+    }
+    else if((a==x3 && b==x1)||(a==x1 && b==x3)){
+        c = x2;
+    }
+    else{
+        c = x1;
+    }
+    int ans = (b - c) + (c - a);
+    cout << ans << endl;
     return 0;
 }
