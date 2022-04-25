@@ -13,10 +13,11 @@ int main(){
 
         while(n>=b || n>=a){
             int maxNum = max(a, b);
-            count++;
             if(maxNum==a){
+                count++;
                 b = b + a;
             }else{
+                count++;
                 a = a + b;
             }
         }
