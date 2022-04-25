@@ -11,7 +11,7 @@ int main(){
         long long int a, b, n,count=0;
         cin >> a >> b >> n;
 
-        while(n>=b && n>=a){
+        while(n>=b || n>=a){
             int maxNum = max(a, b);
             count++;
             if(maxNum==a){
@@ -20,7 +20,7 @@ int main(){
                 a = a + b;
             }
         }
-        cout << count << endl;
+        cout << count-1 << endl;
     }
     return 0;
 }
