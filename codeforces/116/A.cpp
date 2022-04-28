@@ -1,22 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+ 
 int main()
 {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
-
-    int t,ans=0, maxi = 0;
-    cin >> t;
-
-    while (t--)
+ 
+    int n, maxNum = 0;
+    cin >> n;
+ 
+    int a[n + 1], b[n + 1];
+ 
+    for (int i = 1; i <= n; i++)
     {
-        int a, b;
-        cin >> a >> b;
-
-        ans = ans + (b - a);
-        maxi = max(maxi, ans);
+        cin >> a[i] >> b[i];
     }
-    cout << maxi << endl;
+    int sum = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        sum =sum+(b[i]-a[i]);
+        maxNum = max(maxNum, sum);
+    }
+
+    cout << maxNum << endl;
+
     return 0;
 }
