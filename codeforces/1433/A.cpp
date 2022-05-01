@@ -5,7 +5,7 @@ int main(){
     ios_base::sync_with_stdio(0);
     cin.tie(0);
 
-    /* int t;
+    int t;
     cin >> t;
 
     while(t--){
@@ -30,37 +30,6 @@ int main(){
         }
 
         int ans = accumulate(vec.begin(), vec.end(), 0);
-        cout << ans << endl;
-    } */
-
-    //Another Way
-
-    int t;
-    cin >> t;
-
-    while(t--){
-        int x, digit, count = 0,ans;
-        cin >> x;
-        digit = x % 10;
-
-        while(x>0){
-            count++;
-            x = x / 10;
-        }
-
-        if(count==1){
-            ans = ((digit * 10) - 10) + 1;
-        }
-        else if(count==2){
-            ans = ((digit * 10) - 10) + 3;
-        }
-        else if(count==3){
-            ans = ((digit * 10) - 10) + 6;
-        }
-        else{
-            ans = ((digit * 10) - 10) + 10;
-        }
-
         cout << ans << endl;
     }
 
