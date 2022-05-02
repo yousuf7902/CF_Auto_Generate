@@ -14,11 +14,18 @@ int main()
         int x, y, a = 0, b = 0;
         cin >> x >> y;
 
-        if(y%x==0){
-            cout << 1 << " " << y / x << endl;
-        }
-        else{
+        if (x > y)
+        {
             cout << 0 << " " << 0 << endl;
+        }
+        else
+        {
+           if(y%x==0){
+               cout << 1 << " " << y / x << endl;
+           }
+           else{
+               cout << 0 << " " << 0 << endl;
+           }
         }
     }
 
