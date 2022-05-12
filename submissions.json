@@ -1,4 +1,20 @@
 {
+  "CF156912627": {
+    "contest_id": 1095,
+    "language": "GNU C++17",
+    "path": "codeforces\\1095\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Repeating Cipher",
+    "problem_url": "https://codeforces.com/contest/1095/problem/A",
+    "submission_id": "CF156912627",
+    "submission_url": "https://codeforces.com/contest/1095/submission/156912627",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "May/12/2022 17:26"
+  },
   "CF156956774": {
     "contest_id": 1675,
     "language": "GNU C++17",
