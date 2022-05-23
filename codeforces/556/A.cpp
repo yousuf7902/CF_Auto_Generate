@@ -5,21 +5,28 @@ int main(){
     ios_base::sync_with_stdio(0);
     cin.tie(0);
 
-    int n;
+    int n,cnt=0;
     cin>>n;
 
     string s;
     cin>>s;
 
     sort(s.begin(),s.end());
-    vector <char> vec;
-    for(int i=0, j=n-1;i<=j;i++,j--){
-        if(s[i]==s[j]){
-            (i==j)? (vec.emplace_back(s[i])):(vec.emplace_back(s[i]), vec.emplace_back(s[j]));
+
+    for(int i=0, j=n-1;i<j;i++,j--){
+        if(s[i]=='0' && s[j]=='1'){
+            s[i]=' ';
+            s[j]=' ';
         }
     }
 
-    cout<<vec.size()<<endl;
+    for(int i=0;i<n;i++){
+        if(s[i]!=' '){
+            cnt++;
+        }
+    }
+
+    cout<<cnt<<endl;
 
     return 0;
 }
