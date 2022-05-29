@@ -26,8 +26,8 @@ using namespace std;
 #define         st set<int>
 #define         ll long long
 #define         eb emplace_back
-#define         py      cout << "YES\n";
-#define         pn      cout << "NO\n";
+#define         py      cout << "Yes\n";
+#define         pn      cout << "No\n";
 #define			endl     "\n"
 #define         rn return 0;
 //
@@ -38,23 +38,25 @@ int main(){
     int t;
     cin>>t;
     
-    //Another way
-    
     while(t--){
         int x,n,m;
         cin>>x>>n>>m;
         
-        m=m*10;
-        if(x<=m)py
+        while(n--){
+            if(x<=20)break;
+            x=(x/2)+10;
+        }
+        
+        while(m--){
+            x=x-10;
+            if(x<=0)break;
+        }
+        if(x<=0){
+            cout<<"YES"<<endl;
+        }
         else{
-            while(n--){
-                x=(x/2)+10;
-            }
-            x=x-m;
-            if(x<=0)py
-            else pn
+            cout<<"NO"<<endl;
         }
     }
-    
     rn;
 }
