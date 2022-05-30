@@ -4,7 +4,6 @@
 // Memory Limit: 256 MB
 // Time Limit: 2000 ms
 // 
-// Powered by CP Editor (https://cpeditor.org)
 
 //~"~"~"~"~"~"~"~"~"~"~"~"~  ♥ B I S M I L L A H I R  R A H M A N I R  R A H I M ♥   ~"~"~"~"~"~"~"~"~"~"~"~"~//  
 
@@ -39,22 +38,45 @@ int main(){
     FAST
     string s;
     cin>>s;
-       
-    //Another way
     
-    int flag=0;
-    for(int i=0;i<s.size();){
-        if(s[i]=='1' && s[i+1]=='4' && s[i+2]=='4')i+=3;
-        else if(s[i]=='1' && s[i+1]=='4')i+=2;
-        else if(s[i]=='1')i++;
-        else{
-            flag=1;
-            break;
+    vc <char>vec;
+    if(s.size()==1 && s[0]=='1')py
+    else if(s.size()==1 && s[0]!='1')pn
+    else{
+        for(int i=0;i< s.size()-2;i++){
+        if(s[i]=='1' && s[i+1]=='4' && s[i+2]=='4'){  
+            vec.eb(s[i]);
+            vec.eb(s[i+1]);
+            vec.eb(s[i+2]);
+            s[i]=' ';
+            s[i+1]=' ';
+            s[i+2]=' ';
+            i+=2;
         }
     }
     
-    if(flag==0)py
+    for(int i=0;i<s.size()-1;i++){
+        if(s[i]=='1' && s[i+1]=='4'){
+            
+            vec.eb(s[i]);
+            vec.eb(s[i+1]);
+            s[i]=' ';
+            s[i+1]=' ';
+            i++;
+        }
+    }
+    
+    for(int i=0;i<=s.size();i++){
+        if(s[i]=='1'){
+            vec.eb(s[i]);
+            s[i]=' ';
+        }
+    }
+    
+    if(vec.size()==s.size())py
     else pn
+        
+    }
     
     rn;
 }
