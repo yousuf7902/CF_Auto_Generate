@@ -41,14 +41,14 @@ int main(){
     cin>>t;
     
     while(t--){
-        ll int n,sum;
+        ll int n,sum,x=0;
         cin>>n;
         
- 
         sum=(n*(n+1))/2;
     
-        for(ll int i=1;i<=n;i*=2){
-            sum=sum-2*i;          
+        for(ll int i=1;x<=n;i++){
+            x=pow(2,i);
+            sum=sum-x;          
             
         }
         cout<<sum<<endl;
