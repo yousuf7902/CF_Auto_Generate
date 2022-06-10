@@ -4,6 +4,7 @@
 // Memory Limit: 256 MB
 // Time Limit: 1000 ms
 // 
+// Powered by CP Editor (https://cpeditor.org)
 
 //~"~"~"~"~"~"~"~"~"~"~"~"~  ♥ B I S M I L L A H I R  R A H M A N I R  R A H I M ♥   ~"~"~"~"~"~"~"~"~"~"~"~"~//  
 
@@ -38,19 +39,21 @@ int main(){
     FAST
     int t;
     cin>>t;
-
-    //Another way
     
     while(t--){
-        int n,m,r,c,dr,dc;
+        int n,m, r, c,dr, dc,mark=0,row=1,col=1;
+        
         cin>>n>>m>>r>>c>>dr>>dc;
         
-        int row, col;
+        while(r!=dr && c!=dc){
+            if(r+row>n || r+row<1)row=row*(-1);
+            if(c+col>m || c+col<1)col=col*(-1);
+            r=r+row;
+            c=c+col;
+            mark++;
+        }
+        cout<<mark<<endl;
         
-        row=(r<=dr)?(dr-r):((n-r)+(n-dr));
-        col=(c<=dc)?(dc-c):((m-c)+(m-dc));
-        
-        cout<<min(row,col)<<endl;
     }
     rn;
 }
