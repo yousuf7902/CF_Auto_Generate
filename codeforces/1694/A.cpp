@@ -39,25 +39,43 @@ int main(){
     FAST
     int t;
     cin>>t;
-
-    //Another Way
-
+    
     while(t--){
         int a,b;
         cin>>a>>b;
         
-        while(a!=0 || b!=0){
-            if(a!=0){
-                cout<<"0";
-                a--;
+        string s;
+        if(a<=b){
+            for(int i=0;i<a*2;i++){
+                if((i+1)%2!=0){
+                    s=s+'0';
+                }
+                else{
+                    s=s+'1';
+                }
             }
             
-            if(b!=0){
-                cout<<"1";
-                b--;
+            for(int i=0;i<b-a;i++){
+                s=s+'1';
             }
         }
-        cout<<endl;
+        else{
+           for(int i=0;i<b*2;i++){
+                if((i+1)%2!=0){
+                    s=s+'0';
+                }
+                else{
+                    s=s+'1';
+                }
+            }
+            
+            for(int i=0;i<a-b;i++){
+                s=s+'0';
+            }
+            
+        }
+        
+        cout<<s<<endl;
     }
     rn;
 }
