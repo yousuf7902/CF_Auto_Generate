@@ -4,7 +4,6 @@
 // Memory Limit: 256 MB
 // Time Limit: 1000 ms
 // 
-// Powered by CP Editor (https://cpeditor.org)
 
 //~"~"~"~"~"~"~"~"~"~"~"~"~  ♥ B I S M I L L A H I R  R A H M A N I R  R A H I M ♥   ~"~"~"~"~"~"~"~"~"~"~"~"~//  
 
@@ -54,15 +53,30 @@ int main(){
             even+=2;
         }
         
-        for(int i=1;i<(n/2);i++){
+        for(int i=1;i<=(n/2);i++){
+            
+            if(i==n/2){
+                if(i==1){
+                    vec.eb(sum -1);
+                    s_odd=s_odd+1;
+                }
+                else{
+                    vec.eb(sum -s_odd);
+                    s_odd=s_odd+(sum-s_odd);
+                }
+                
+            }
+            else{
                 vec.eb(odd);
                 s_odd=s_odd+odd;
                 odd+=2;
+            }
+            
         }
         
-        vec.eb(sum-s_odd);
+        int size=vec.size();
         
-        if((sum-s_odd)%2!=0){
+        if(sum==s_odd && (vec[size-1]%2!=0)){
             cout<<"YES"<<endl;
             
             for(auto it:vec){
@@ -73,7 +87,8 @@ int main(){
         else{
             cout<<"NO"<<endl;
         }
-         
+           
+        
     }
     
     rn;
