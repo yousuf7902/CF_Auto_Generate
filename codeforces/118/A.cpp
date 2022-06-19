@@ -1,21 +1,28 @@
-#include<iostream>
-#include<string>
+#include <bits/stdc++.h>
 using namespace std;
+ 
 int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+ 
+    string s;
+    cin >> s;
+ 
+    vector<char> st;
+    for (int i = 0; i < s.size(); i++)
     {
-        string str;
-        int i;
-        cin>>str;
-        for(i=0;i<str.size();i++)
+        s[i] = tolower(s[i]);
+        if (s[i] != 'a' && s[i] != 'e' && s[i] != 'i' && s[i] != 'o' && s[i] != 'u' && s[i] != 'y')
         {
-            str[i]=tolower(str[i]);
-            if(str[i]== 'a'||str[i]== 'e'||str[i]== 'i' || str[i]== 'o' ||str[i]== 'u' || str[i]== 'y')
-            {
-                str[i]=0;
-            }
-            else
-            {
-                cout<< "."<<str[i]<< "";
-            }
+            st.emplace_back(s[i]);
         }
     }
+ 
+    for (auto it : st)
+    {
+        cout <<"."<<it;
+    }
+ 
+    return 0;
+}
