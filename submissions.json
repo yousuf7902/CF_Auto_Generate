@@ -1,4 +1,20 @@
 {
+  "CF161531919": {
+    "contest_id": 1328,
+    "language": "GNU C++17",
+    "path": "codeforces\\1328\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Divisibility Problem",
+    "problem_url": "https://codeforces.com/contest/1328/problem/A",
+    "submission_id": "CF161531919",
+    "submission_url": "https://codeforces.com/contest/1328/submission/161531919",
+    "tags": [
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jun/23/2022 13:43"
+  },
   "CF161878986": {
     "contest_id": 520,
     "language": "GNU C++17",
