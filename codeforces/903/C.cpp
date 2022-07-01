@@ -1,8 +1,10 @@
 // Problem: C. Boxes Packing
 // Contest: Codeforces - Educational Codeforces Round 34 (Rated for Div. 2)
-// URL: https://codeforces.com/problemset/problem/903/C
+// URL: https://codeforces.com/contest/903/problem/C
 // Memory Limit: 256 MB
 // Time Limit: 1000 ms
+// 
+// Powered by CP Editor (https://cpeditor.org)
 
 //~"~"~"~"~"~"~"~"~"~"~"~"~  ♥ B I S M I L L A H I R  R A H M A N I R  R A H I M ♥   ~"~"~"~"~"~"~"~"~"~"~"~"~//  
 
@@ -33,27 +35,35 @@ using namespace std;
 //
 //===============================================================================
 
+int flag[5100];
+
 int main(){
     FAST
-    
-    int n;
+
+    int n,cnt=0;
     cin>>n;
     
     int arr[n];
     
-    map<int, int> mapi;
-    
     for(int i=0;i<n;i++){
         cin>>arr[i];
-        mapi[arr[i]]++;
     }
     
-    int ans=0;
+    sort(arr,arr+n);
+    
     for(int i=0;i<n;i++){
-        ans=max(ans, mapi[arr[i]]);
+        for(int j=i+1;j<n;j++){
+            if(flag[j])continue;
+            if(arr[i]<arr[j]){
+                flag[j]=1;
+                cnt++;
+                break;
+            }
+        }
     }
     
-    cout<<ans<<endl;
+    
+    cout<<n-cnt<<endl;
     
     rn;
 }
