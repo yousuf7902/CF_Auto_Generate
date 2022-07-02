@@ -1,8 +1,10 @@
 // Problem: A. Tom Riddle's Diary
 // Contest: Codeforces - Manthan, Codefest 17
-// URL: https://codeforces.com/contest/855/problem/A
+// URL: https://codeforces.com/problemset/problem/855/A
 // Memory Limit: 256 MB
 // Time Limit: 2000 ms
+// 
+// Powered by CP Editor (https://cpeditor.org)
 
 //~"~"~"~"~"~"~"~"~"~"~"~"~  ♥ B I S M I L L A H I R  R A H M A N I R  R A H I M ♥   ~"~"~"~"~"~"~"~"~"~"~"~"~//  
 
@@ -33,23 +35,35 @@ using namespace std;
 //
 //===============================================================================
 
+int check[110];
+
 int main(){
     FAST
     
-    int t;
-    cin>>t;
+    int n;
+    cin>>n;
     
-    map <string, bool> check;
+    string names[n];
     
+    for(int i=0;i<n;i++){
+        cin>>names[i];
+    }
     
-    while(t--){
-        string s;
-        cin>>s;
-        
-        if(check[s]==1)cout<<"YES"<<endl;
-        else cout<<"NO"<<endl;
-        
-        check[s]=1;
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(names[i]==names[j]){
+                check[j]=1;
+            }       
+        }
+    }
+    
+    for(int i=0;i<n;i++){
+        if(check[i]==1){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
     }
     
     rn;
