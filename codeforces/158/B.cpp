@@ -56,12 +56,7 @@ int main(){
     }
     
     if(arr[1]>0){
-        if(arr[1]%4==0){
-            texi+=arr[1]/4;
-        }
-        else{
-            texi+=(arr[1]/4)+1;
-        }
+        texi+=(arr[1]+3)/4;
     }
     
     cout<<texi<<endl;
