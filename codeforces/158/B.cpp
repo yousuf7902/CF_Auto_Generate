@@ -40,26 +40,27 @@ int main(){
     
     int arr[5]={0};
     
-    for(int i=0;i<n;i++){
-        int x;
-        cin>>x;
-        arr[x]++;
+    while(n--){
+        int temp;
+        cin>>temp;
+        
+        arr[temp]++;
     }
     
-    int texi=arr[4]+arr[3]+(arr[2]/2);
+    int total=arr[4]+arr[3]+(arr[2]/2);
     
-    arr[1]-=arr[3];
+    arr[1]=arr[1]-arr[3];
     
     if(arr[2]%2==1){
-        texi+=1;
+        total+=1;
         arr[1]-=2;
     }
     
     if(arr[1]>0){
-        texi+=(arr[1]+3)/4;
+        total+=(arr[1]+3)/4;
     }
-    
-    cout<<texi<<endl;
+
+    cout<<total<<endl;
     
     rn;
 }
