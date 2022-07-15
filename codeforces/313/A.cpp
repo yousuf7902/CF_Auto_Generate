@@ -30,17 +30,54 @@
     int main(){
         FAST
         
-        int n;
+        int n,f=0,s;
         cin>>n;
+        s=n;
         
-        if(n>=0)cout<<n<<endl;
-        else{
-            int a,b;
-            a=n/10;
-            b=(n/100)*10+n%10;
-            cout<<max(a,b)<<endl;
+        if(n<0){
+            n=n*(-1);
+            f=1;
         }
         
+        
+        
+        vc<int>vec;
+        while(n>0){
+            int last=n%10;
+            vec.eb(last);
+            n=n/10;
+        }
+        
+        reverse(vec.begin(),vec.end());
+        
+        int num1=0,num2=0;
+        
+        for(int i=0;i<vec.size();i++){
+            if(i!=(vec.size()-1)){
+                num1=(num1*10)+vec[i];
+            }
+            
+            if(i!=(vec.size()-2)){
+                num2=(num2*10)+vec[i];
+            }
+        }
+        
+        if(f==1){
+            num1=num1*(-1);
+            num2=num2*(-1);
+        }
+        
+        //cout<<s<<endl<<num1<<endl<<num2<<endl;
+        
+        if(s>num1 && s>num2){
+            cout<<s<<endl;
+        }
+        else if(num1>s && num1>num2){
+            cout<<num1<<endl;
+        }
+        else{
+            cout<<num2<<endl;
+        }
         rn;
     }
 
