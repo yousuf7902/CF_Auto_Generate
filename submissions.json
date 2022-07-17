@@ -1,4 +1,21 @@
 {
+  "CF164628519": {
+    "contest_id": 1708,
+    "language": "GNU C++17",
+    "path": "codeforces\\1708\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Difference Operations",
+    "problem_url": "https://codeforces.com/contest/1708/problem/A",
+    "submission_id": "CF164628519",
+    "submission_url": "https://codeforces.com/contest/1708/submission/164628519",
+    "tags": [
+      "greedy",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jul/17/2022 21:16"
+  },
   "CF164859055": {
     "contest_id": 1706,
     "language": "GNU C++17",
