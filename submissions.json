@@ -1,4 +1,22 @@
 {
+  "CF168247294": {
+    "contest_id": 706,
+    "language": "GNU C++17",
+    "path": "codeforces\\706\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Interesting drink",
+    "problem_url": "https://codeforces.com/contest/706/problem/B",
+    "submission_id": "CF168247294",
+    "submission_url": "https://codeforces.com/contest/706/submission/168247294",
+    "tags": [
+      "binary search",
+      "dp",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Aug/14/2022 15:13"
+  },
   "CF168718080": {
     "contest_id": 1719,
     "language": "GNU C++17",
