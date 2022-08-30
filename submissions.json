@@ -4195,6 +4195,22 @@
     ],
     "timestamp": "Aug/24/2022 00:34"
   },
+  "CF170220840": {
+    "contest_id": 1722,
+    "language": "GNU C++17",
+    "path": "codeforces\\1722\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Colourblindness",
+    "problem_url": "https://codeforces.com/contest/1722/problem/B",
+    "submission_id": "CF170220840",
+    "submission_url": "https://codeforces.com/contest/1722/submission/170220840",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Aug/30/2022 21:18"
+  },
   "CF170241066": {
     "contest_id": 1722,
     "language": "GNU C++17",
