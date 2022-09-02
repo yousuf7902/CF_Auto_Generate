@@ -4331,6 +4331,22 @@
     ],
     "timestamp": "Sep/02/2022 14:58"
   },
+  "CF170569784": {
+    "contest_id": 474,
+    "language": "GNU C++17",
+    "path": "codeforces\\474\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Keyboard",
+    "problem_url": "https://codeforces.com/contest/474/problem/A",
+    "submission_id": "CF170569784",
+    "submission_url": "https://codeforces.com/contest/474/submission/170569784",
+    "tags": [
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Sep/02/2022 16:31"
+  },
   "CF170588671": {
     "contest_id": 1335,
     "language": "GNU C++17",
