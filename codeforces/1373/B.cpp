@@ -49,7 +49,7 @@ int main(){
             else zero++;
         }
             
-        (min(zero, one)%2==0)? cout<<"NET"<<endl: cout<<"DA"<<endl;
+        cout<<(min(one,zero)%2 ? "DA" : "NET" ) <<endl;;     
          
     }
     
