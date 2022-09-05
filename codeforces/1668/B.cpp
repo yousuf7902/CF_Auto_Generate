@@ -55,15 +55,14 @@ int main(){
 
         sort(vec.begin(),vec.end());
         
-        vec.eb(vec[0]);
-        
         ll int ans=n;
         
-        for(int i=0;i<vec.size()-1;i++){
-            if(vec[i]<vec[i+1])ans+=vec[i+1];
-            else ans+=vec[i];
+        for(int i=1;i<n;i++){
+            ans+=vec[i];
         }
         
+        
+        ans+=vec[n-1];
         
         if(ans<=m)cout<<"YES"<<endl;
         else cout<<"NO"<<endl;
