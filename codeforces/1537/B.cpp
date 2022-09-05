@@ -43,8 +43,15 @@ int main(){
         int n,m,i,j;
         cin>>n>>m>>i>>j;
         
-        cout<<n<<" "<<m<<" 1 1"<<endl;
-    
+        if(i==1 && j==1){
+            cout<<n<<" "<<m<<" "<<n<<" "<<m<<endl;
+        }
+        else if(n==i && m==j){
+            cout<<"1 1 1 1"<<endl;
+        }
+        else{
+            cout<<n<<" "<<m<<" 1 1"<<endl;
+        }
     }
     
     rn;
