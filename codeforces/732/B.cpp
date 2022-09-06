@@ -46,11 +46,19 @@ int main(){
     int ans=0;
     for(int i=1;i<n;i++){
         if(arr[i]+arr[i-1]<k){
-            int cnt=k-(arr[i]+arr[i-1]);
-            arr[i]+=cnt;
-            ans+=cnt;
+            if(arr[i]<arr[i-1]){
+                int cnt=(k-arr[i-1])-arr[i];
+                arr[i]+=cnt;
+                ans+=cnt;
+            }
+            else{
+                int cnt=(k-arr[i])-arr[i-1];
+                arr[i]+=cnt;
+                ans+=cnt;
+            }
         }
     }
+    
     
     cout<<ans<<endl;
     for(int i=0;i<n;i++)cout<<arr[i]<<" ";
