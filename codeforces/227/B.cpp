@@ -39,10 +39,16 @@ int main(){
     ll int n,m;
     cin>>n;
     
-    int arr[n+1];
+    vc <int> vec(n),rev(n);
     
-    map<int,int>mapi1;
-    for(int i=1;i<=n;i++)cin>>arr[i], mapi1[arr[i]]=i;
+    map<int,int>mapi1, mapi2;
+    for(int i=0;i<n;i++)cin>>vec[i], mapi1[vec[i]]=i+1;
+    
+    rev=vec;
+    
+    reverse(rev.begin(),rev.end());
+    
+    for(int i=0;i<n;i++)mapi2[rev[i]]=i+1;
     
     cin>>m;
     
@@ -52,11 +58,13 @@ int main(){
         cin>>x;
         
         ans1+=mapi1[x];
-        ans2+=(n-mapi1[x])+1;
+        ans2+=mapi2[x];
         //cout<<mapi1[x]<<" "<<mapi2[x]<<endl;
     }
     
     cout<<ans1<<" "<<ans2<<endl;
+    
+    
     
     rn;
 }
