@@ -40,24 +40,27 @@ int main(){
     cin>>n;
     
     map<string, int> mapi;
-    int maxi=INT_MIN;
-    
-    string ans;
+    set <string> s;
     
     while(n--){
         string a;
         cin>>a;
         
+        s.insert(a);
         mapi[a]++;
-        
-        if(mapi[a]>maxi){
-            maxi=mapi[a];
-            ans=a;
-        }
     }
     
-    cout<<ans<<endl;
+    int maxi=INT_MIN;
+    for(auto it: mapi){
+        maxi=max(maxi, it.second);
+    }
     
+    for(auto it:mapi){
+        if(it.second==maxi){
+            cout<<it.first<<endl;
+            break;
+        }
+    }
     
     rn;
 }
