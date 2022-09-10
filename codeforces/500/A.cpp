@@ -37,15 +37,26 @@ int main(){
     
     for(int i=1;i<n;i++) cin>>arr[i];
     
-    int check=1;
+    map<int, int>mapi;
     
-    while(check<t){
-        check+=arr[check];
+    for(int i=1;i<n;i++){
+        int x;
+        
+        x=i+arr[i];
+        i=x-1;
+        
+        if(mapi[x]==0){
+            mapi[x]=1;
+        }
+        
     }
     
-    if(check==t)cout<<"YES"<<endl;
-    else cout<<"NO"<<endl;
-    
+    if(mapi[t]==1){
+        cout<<"YES"<<endl;
+    }
+    else{
+        cout<<"NO"<<endl;
+    }
     
     rn;
 }
