@@ -39,24 +39,32 @@ int main(){
     int n,m;
     cin>>n>>m;
     
-    map<string,string>mapi;
-    while(m--){
-        string s1,s2;
-        cin>>s1>>s2;
-        if(s1.size()<=s2.size()){
-            mapi[s1]=s1;
-        }
-        else{
-            mapi[s1]=s2;
+    string t[n], s[m][2];
+    
+    for(int i=0;i<m;i++){
+        for(int j=0;j<2;j++){
+            cin>>s[i][j];
         }
     }
     
-    while(n--){
-        string s;
-        cin>>s;
-        
-        cout<<mapi[s]<<" ";
+    for(int i=0;i<n;i++)cin>>t[i];
+    
+    map<string,string>mapi;
+    for(int i=0;i<m;i++){
+        for(int j=0;j<1;j++){
+            if(s[i][0].size()<=s[i][1].size()){
+                mapi[s[i][0]]=s[i][0];
+            }
+            else{
+                mapi[s[i][0]]=s[i][1];
+            }
+        }
     }
+    
+    for(int i=0;i<n;i++){
+        cout<<mapi[t[i]]<<" ";
+    }
+    
     
     rn;
 }
