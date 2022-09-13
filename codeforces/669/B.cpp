@@ -43,18 +43,11 @@ int main(){
     string s;
     cin>>s;
     
-    map<int,int>mapi;
     for(int i=0;i<n;i++)cin>>arr[i];
     
     ll ans=0;
-    while(1){
+    for(int i=0;i<n;i++){
         
-        if(mapi[ans]>1){
-            cout<<"INFINITE"<<endl;
-            rn
-        }
-        
-        mapi[ans]++;
         if(s[ans]=='>'){
             ans+=arr[ans];
         }
@@ -62,12 +55,12 @@ int main(){
             ans-=arr[ans];
         }
         
-        if(ans>n || ans<0 ){
+        if(ans>=n || ans<0 ){
             cout<<"FINITE"<<endl;
-            rn
+            return 0;
         }
     }
-
+    cout<<"INFINITE"<<endl;
     
     rn;
 }
