@@ -1,11 +1,11 @@
 // Problem: B. Polycarp and Letters
 // Contest: Codeforces - Codeforces Round #436 (Div. 2)
-// URL: https://codeforces.com/contest/864/problem/B
+// URL: https://codeforces.com/problemset/problem/864/B
 // Memory Limit: 256 MB
 // Time Limit: 2000 ms
 
-//~"~"~"~"~"~"~"~"~"~"~"~"~  ♥ B I S M I L L A H I R  R A H M A N I R  R A H I M ♥   ~"~"~"~"~"~"~"~"~"~"~"~"~//
-
+//~"~"~"~"~"~"~"~"~"~"~"~"~  ♥ B I S M I L L A H I R  R A H M A N I R  R A H I M ♥   ~"~"~"~"~"~"~"~"~"~"~"~"~//  
+ 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
 // ##                                                                         ## //
 // ##          Yousuf Hassan || CSE,IUBAT || yousufhassan04@gmail.com         ## //
@@ -13,10 +13,10 @@
 // ##                        CF Handle : Yousuf7902                           ## //
 // ##                                                                         ## //
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
-
+ 
 #include <bits/stdc++.h>
 using namespace std;
-
+ 
 //===============================================================================
 //
 #define         FAST ios_base::sync_with_stdio(false); cin.tie(0), cout.tie(0);
@@ -36,45 +36,26 @@ using namespace std;
 int main(){
     FAST
     
-    	int n;
-	cin >> n;
-	string s;
-	cin >> s;
-	int a[26]={0};
-	int max=0;
-	for(int i=0;i<n;i++)
-	{
-	    
-	    if(s[i]<91)
-	    {
-	        int c=0;
-	        for(int j=0;j<26;j++)
-	        {
-	          if(a[j]>0) 
-	          c++;
-	          
-	        }
-	      //cout << c;
-	        if(c>max)
-	        max=c;
-	       for(int j=0;j<26;j++)
-	       a[j]=0;
-	    }
-	    else
-	    {
-	        a[s[i]-'a']++;
-	    }
-	    
-	}
-	int c=0;
-	for(int i=0;i<26;i++)
-	{
-	    if(a[i]>0)
-	    c++;
-	  	}
-	if(c>max) max=c;
-	cout << max;    
-
+    int n;
+    cin>>n;
+    
+    string s;
+    cin>>s;
+    
+    set<char>check;
+    int ans=0;
+    for(int i=0;i<s.size();i++){
+        if(s[i]>='A' && s[i]<='Z'){
+            ans=max(ans,(int)check.size());
+            check.clear();
+        }
+        else{
+            check.insert(s[i]);
+            ans=max(ans,(int)check.size());
+        }
+        
+    }
+    cout<<ans<<endl;
+    
     rn;
 }
-
