@@ -36,7 +36,7 @@ using namespace std;
 int main(){
     FAST
     
-    /*int q;
+    int q;
     cin>>q;
     
     map<string, string>mapi;
@@ -61,28 +61,7 @@ int main(){
     }
     
     cout<<mapi.size()<<endl;
-    for(auto it:mapi)cout<<it.first<<" "<<it.second<<endl;*/
-    
-    int t;
-    cin>>t;
-    
-    map<string , string>mapi,ans;
-    
-    while(t--){
-        string a,b;
-        cin>>a>>b;
-        
-        if(mapi.find(a)==mapi.end()){
-            mapi[a]=a;
-        }
-        mapi[b]=mapi[a];
-        ans[mapi[a]]=b;
-        
-    }
-    
-    cout<<ans.size()<<endl;
-    for(auto it:ans)cout<<it.first<<" "<<it.second<<endl;
-    
+    for(auto it:mapi)cout<<it.first<<" "<<it.second<<endl;
  
     rn;
 }
