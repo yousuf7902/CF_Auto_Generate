@@ -36,14 +36,14 @@ using namespace std;
 int main(){
     FAST
     
-    int n,m;
-    cin>>n>>m;
+    int n,t;
+    cin>>n>>t;
     
-    if(n==1 && m==10){
+    if(n==1 && t==10){
         cout<<-1<<endl;
     }
     else{
-        if(m==10){
+        if(t==10){
             cout<<10;
             for(int i=0;i<n-2;i++){
                 cout<<0;
@@ -51,7 +51,7 @@ int main(){
             cout<<endl;
         }
         else{
-            for(int i=0;i<n;i++)cout<<m;
+            for(int i=0;i<n;i++)cout<<t;
             cout<<endl;
         }
         
