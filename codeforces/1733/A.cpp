@@ -1,9 +1,3 @@
-// Problem: A. Consecutive Sum
-// Contest: Codeforces - Codeforces Round #821 (Div. 2)
-// URL: https://codeforces.com/contest/1733/problem/A
-// Memory Limit: 256 MB
-// Time Limit: 1000 ms
-
 //~"~"~"~"~"~"~"~"~"~"~"~"~  ♥ B I S M I L L A H I R  R A H M A N I R  R A H I M ♥   ~"~"~"~"~"~"~"~"~"~"~"~"~//
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
@@ -60,4 +54,3 @@ int main(){
 
     rn;
 }
-
