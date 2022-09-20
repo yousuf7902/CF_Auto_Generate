@@ -40,7 +40,7 @@ int main(){
     cin>>n>>m;
     
     if(n==1 && m==10){
-        cout<<"-1"<<endl;
+        cout<<-1<<endl;
     }
     else{
         if(m==10){
