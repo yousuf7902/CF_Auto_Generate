@@ -4,8 +4,9 @@
 // Memory Limit: 256 MB
 // Time Limit: 1000 ms
 
-//~"~"~"~"~"~"~"~"~"~"~"~"~  ♥ B I S M I L L A H I R  R A H M A N I R  R A H I M ♥   ~"~"~"~"~"~"~"~"~"~"~"~"~//
 
+//~"~"~"~"~"~"~"~"~"~"~"~"~  ♥ B I S M I L L A H I R  R A H M A N I R  R A H I M ♥   ~"~"~"~"~"~"~"~"~"~"~"~"~//  
+ 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
 // ##                                                                         ## //
 // ##          Yousuf Hassan || CSE,IUBAT || yousufhassan04@gmail.com         ## //
@@ -13,10 +14,10 @@
 // ##                        CF Handle : Yousuf7902                           ## //
 // ##                                                                         ## //
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
-
+ 
 #include <bits/stdc++.h>
 using namespace std;
-
+ 
 //===============================================================================
 //
 #define         FAST ios_base::sync_with_stdio(false); cin.tie(0), cout.tie(0);
@@ -35,24 +36,21 @@ using namespace std;
 
 int main(){
     FAST
-
-    int t;
-    cin>>t;
-
-	while(t--){
-		int n;
-		cin>>n;
-
-		string s;
-		cin>>s;
-
-		int cnt=0;
-		for(int i=0;i<n;i++){
-			if(s[i]==')' && cnt!=0)cnt--;
-			else if(s[i]=='(') cnt++;
-		}
-
-		cout<<cnt<<endl;
-	}
+    
+    int tc;cin>>tc;
+    while(tc--)
+    {
+        int n;cin>>n;
+        string s;cin>>s;
+        int c=0,m=INT_MAX;
+        for(int i=0;i<n;i++)
+        {
+            if(s[i]=='(')c++;
+            if(s[i]==')')c--;
+            m = min(m,c);
+        }
+        cout<<m * -1<<endl;
+    }
+    
     rn;
 }
