@@ -43,10 +43,12 @@ int main(){
         int n;
         cin>>n;
         
-        int arr[n],f=0;
+        ll int arr[n],f=0;
+        
         
         for(int i=0;i<n;i++){
-            cin>>arr[i];  
+            cin>>arr[i];
+            
         }
         
         vc<int>vec;
@@ -67,7 +69,6 @@ int main(){
         }
         
         cout<<ans<<endl;
-
 
     }
     
