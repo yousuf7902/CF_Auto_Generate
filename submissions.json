@@ -4831,6 +4831,24 @@
     ],
     "timestamp": "Sep/06/2022 22:30"
   },
+  "CF173351281": {
+    "contest_id": 1734,
+    "language": "GNU C++17",
+    "path": "codeforces\\1734\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Select Three Sticks",
+    "problem_url": "https://codeforces.com/contest/1734/problem/A",
+    "submission_id": "CF173351281",
+    "submission_url": "https://codeforces.com/contest/1734/submission/173351281",
+    "tags": [
+      "brute force",
+      "greedy",
+      "sortings",
+      "*800"
+    ],
+    "timestamp": "Sep/24/2022 23:25"
+  },
   "CF173608300": {
     "contest_id": 1730,
     "language": "GNU C++17",
