@@ -4831,6 +4831,24 @@
     ],
     "timestamp": "Sep/06/2022 22:30"
   },
+  "CF175168461": {
+    "contest_id": 1735,
+    "language": "GNU C++17",
+    "path": "codeforces\\1735\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Working Week",
+    "problem_url": "https://codeforces.com/contest/1735/problem/A",
+    "submission_id": "CF175168461",
+    "submission_url": "https://codeforces.com/contest/1735/submission/175168461",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Oct/08/2022 23:32"
+  },
   "CF175226198": {
     "contest_id": 743,
     "language": "GNU C++17",
