@@ -42,8 +42,7 @@ int main(){
     ll int ans=0;
     
     for(int i=1;i<=n;i++){
-        if(x>(i*n))continue;
-        if(x%i==0)ans++;
+        if(x%i==0 and (i*n)>=x)ans++; 
     }
     
     cout<<ans<<endl;
