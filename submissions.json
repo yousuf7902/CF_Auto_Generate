@@ -4831,6 +4831,22 @@
     ],
     "timestamp": "Sep/06/2022 22:30"
   },
+  "CF175968881": {
+    "contest_id": 1742,
+    "language": "GNU C++17",
+    "path": "codeforces\\1742\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Stripes",
+    "problem_url": "https://codeforces.com/contest/1742/problem/C",
+    "submission_id": "CF175968881",
+    "submission_url": "https://codeforces.com/contest/1742/submission/175968881",
+    "tags": [
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Oct/13/2022 21:24"
+  },
   "CF176179261": {
     "contest_id": 1742,
     "language": "GNU C++17",
