@@ -56,8 +56,8 @@ int main(){
         
         ll int ans=-1;
         
-        for(auto &i:mapi){
-            for(auto &j: mapi){
+        for(auto i:mapi){
+            for(auto j: mapi){
                 int gc=gcd(i.first,j.first);
                 
                 if(gc==1){

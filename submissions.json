@@ -4831,6 +4831,24 @@
     ],
     "timestamp": "Sep/06/2022 22:30"
   },
+  "CF176179261": {
+    "contest_id": 1742,
+    "language": "GNU C++17",
+    "path": "codeforces\\1742\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Coprime",
+    "problem_url": "https://codeforces.com/contest/1742/problem/D",
+    "submission_id": "CF176179261",
+    "submission_url": "https://codeforces.com/contest/1742/submission/176179261",
+    "tags": [
+      "brute force",
+      "greedy",
+      "number theory",
+      "*1100"
+    ],
+    "timestamp": "Oct/14/2022 21:59"
+  },
   "CF176268273": {
     "contest_id": 1742,
     "language": "GNU C++17",
