@@ -4831,6 +4831,23 @@
     ],
     "timestamp": "Sep/06/2022 22:30"
   },
+  "CF177787917": {
+    "contest_id": 157,
+    "language": "GNU C++17",
+    "path": "codeforces\\157\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Trace",
+    "problem_url": "https://codeforces.com/contest/157/problem/B",
+    "submission_id": "CF177787917",
+    "submission_url": "https://codeforces.com/contest/157/submission/177787917",
+    "tags": [
+      "geometry",
+      "sortings",
+      "*1000"
+    ],
+    "timestamp": "Oct/24/2022 22:21"
+  },
   "CF177828556": {
     "contest_id": 456,
     "language": "GNU C++17",
