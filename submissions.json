@@ -4831,6 +4831,25 @@
     ],
     "timestamp": "Sep/06/2022 22:30"
   },
+  "CF177833058": {
+    "contest_id": 424,
+    "language": "GNU C++17",
+    "path": "codeforces\\424\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Megacity",
+    "problem_url": "https://codeforces.com/contest/424/problem/B",
+    "submission_id": "CF177833058",
+    "submission_url": "https://codeforces.com/contest/424/submission/177833058",
+    "tags": [
+      "binary search",
+      "greedy",
+      "implementation",
+      "sortings",
+      "*1200"
+    ],
+    "timestamp": "Oct/25/2022 12:13"
+  },
   "CF177841377": {
     "contest_id": 124,
     "language": "GNU C++17",
