@@ -4831,6 +4831,25 @@
     ],
     "timestamp": "Sep/06/2022 22:30"
   },
+  "CF178697276": {
+    "contest_id": 1741,
+    "language": "GNU C++17",
+    "path": "codeforces\\1741\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Minimize the Thickness",
+    "problem_url": "https://codeforces.com/contest/1741/problem/C",
+    "submission_id": "CF178697276",
+    "submission_url": "https://codeforces.com/contest/1741/submission/178697276",
+    "tags": [
+      "brute force",
+      "greedy",
+      "math",
+      "two pointers",
+      "*1100"
+    ],
+    "timestamp": "Oct/31/2022 20:41"
+  },
   "CF180660438": {
     "contest_id": 1748,
     "language": "GNU C++17",
