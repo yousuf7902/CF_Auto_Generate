@@ -4831,6 +4831,22 @@
     ],
     "timestamp": "Sep/06/2022 22:30"
   },
+  "CF181111047": {
+    "contest_id": 456,
+    "language": "GNU C++17",
+    "path": "codeforces\\456\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Laptops",
+    "problem_url": "https://codeforces.com/contest/456/problem/A",
+    "submission_id": "CF181111047",
+    "submission_url": "https://codeforces.com/contest/456/submission/181111047",
+    "tags": [
+      "sortings",
+      "*1100"
+    ],
+    "timestamp": "Nov/15/2022 21:42"
+  },
   "CF181121799": {
     "contest_id": 1511,
     "language": "GNU C++17",
