@@ -81,9 +81,21 @@ void solve(){
         int x;
         cin>>x;
         
-        auto value=lower_bound(ans.begin(), ans.end(), x)-ans.begin();
+        int low=0, hi=ans.size()-1;
         
-        cout<<value+1<<endl;
+        int a=0;
+        while(low <= hi){
+            int mid=(low+hi)/2;
+            
+            if(ans[mid]< x){
+                low=mid+1;
+            }
+            else{
+                a=mid;
+                hi=mid-1;
+            }
+        }
+        cout<<a+1<<endl;
     }
 }
 
