@@ -61,24 +61,33 @@ void solve(){
     
     vc vec(n),a(n-1), b(n-2);
     
-    int sum1=0, sum2=0, sum3=0;
+    map<int, int> mapi1, mapi2;
     for(int i=0;i<n;i++){
         cin>>vec[i];
         
-        sum1+=vec[i];
+        mapi1[vec[i]]++;
     }
     for(int i=0;i<n-1;i++){
         cin>>a[i];
         
-        sum2+=a[i];
+        mapi1[a[i]]--;
+        mapi2[a[i]]++;
     }
     for(int i=0;i<n-2;i++){
         cin>>b[i];
         
-        sum3+=b[i];
+        mapi2[b[i]]--;
     }
     
-    cout<<sum1-sum2<<endl<<sum2-sum3<<endl;
+    for(auto it : mapi1){
+        if(it.second>0)cout<<it.first<<endl;
+    }
+    
+    for(auto it: mapi2){
+        if(it.second>0)cout<<it.first<<endl;
+    }
+    
+    
     
     
 }
