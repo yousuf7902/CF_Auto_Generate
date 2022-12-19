@@ -4831,6 +4831,23 @@
     ],
     "timestamp": "Sep/06/2022 22:30"
   },
+  "CF185976935": {
+    "contest_id": 1772,
+    "language": "GNU C++17",
+    "path": "codeforces\\1772\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Different Differences",
+    "problem_url": "https://codeforces.com/contest/1772/problem/C",
+    "submission_id": "CF185976935",
+    "submission_url": "https://codeforces.com/contest/1772/submission/185976935",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math"
+    ],
+    "timestamp": "Dec/19/2022 21:09"
+  },
   "CF186078163": {
     "contest_id": 489,
     "language": "GNU C++17",
