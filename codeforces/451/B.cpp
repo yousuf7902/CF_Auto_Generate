@@ -68,11 +68,9 @@ int solve(){
     int mx=INT_MIN, mini=INT_MAX;
     
     for(int i=0;i<n;i++){
-        if(arr[i]!=x[i]){
-            mini=i;
-            mx=lower_bound(x, x+n, arr[i])-x;
-            break;
-        }
+        if(arr[i]==x[i])continue;
+        mx=max(mx, i);
+        mini=min(mini, i);
     }
     
     if(mini==INT_MAX){
