@@ -64,7 +64,7 @@ void solve(){
         //cout<<i<<endl;
         if(n%i==0){
             if(i<=k)result=min(result, n/i);
-            if(n/i<=k)result=min(result,i);
+            if(n/i<=k)result=min(result, n/(n/i));
         }
     }
     cout<<result<<endl;
